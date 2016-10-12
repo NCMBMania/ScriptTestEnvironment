@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>スクリプトのテスト実行</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="query">Query</label>
+          <textarea name="query" class="form-control" id="query" placeholder="a=b(改行)b=cといった形で値を記述してください" rows="5" cols="60"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="body">Body</label>
+          <textarea name="body" class="form-control" id="body" placeholder="a=b(改行)b=cといった形で値を記述してください" rows="5" cols="60"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="method">メソッド</label>
+          <select class="form-control" name="method" id="method">
+            <option>GET</option>
+            <option>POST</option>
+            <option>PUT</option>
+            <option>DELETE</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
+      <div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">実行結果</label>
+          <textarea class="form-control" id="result" placeholder="" rows="5" cols="60"></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
